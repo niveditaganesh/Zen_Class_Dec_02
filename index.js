@@ -10,7 +10,7 @@ const mongoClient=mongodb.MongoClient;
 const cryptoRandomString = require('crypto-random-string');
 //dbURL--local
 //const dbURL='mongodb://127.0.0.1:27017';
-
+const port=process.env.PORT ||3000
 const dbURL= 'mongodb+srv://training-db:G0xkzKuZ5ZubrOGm@cluster0.ohd0y.mongodb.net/<dbname>?retryWrites=true&w=majority'; //dbUrl can be either from local or from cloud
 //dbURL --cloud =>replace <passwor> with connection pasword :::::is copied to.env
 //const dbURL='mongodb+srv://training-db:<password>@cluster0.ohd0y.mongodb.net/<dbname>?retryWrites=true&w=majority'
@@ -209,6 +209,6 @@ app.post('/reset',async(req,res)=>{
         }
     })
   
-    app.listen(3000,()=>{
+    app.listen(port,()=>{
         console.log('Server Started')
 })
