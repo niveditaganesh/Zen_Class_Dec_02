@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "1",
   "scripts": {
-    "test": ""
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +20,13 @@
     "express": "^4.17.1"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niveditaganesh/Zen_Class_Dec_02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niveditaganesh/Zen_Class_Dec_02/issues"
+  },
+  "homepage": "https://github.com/niveditaganesh/Zen_Class_Dec_02#readme",
   "description": ""
 }
