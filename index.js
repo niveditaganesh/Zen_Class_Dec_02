@@ -152,7 +152,7 @@ app.post('/reset',async(req,res)=>{
                 to: `${mail_id}`, // list of receivers
                 subject: "Link to Reset Password", // Subject line
                 html: `<b>Click the below link to reset pasword.</b><br>
-                <p>http://127.0.0.1:5500/reset.html?reset_string=${random_string},user=${req.body.email}</p>
+                <p>https://determined-chandrasekhar-7fc9d1.netlify.app/reset.html?reset_string=${random_string},user=${req.body.email}</p>
                 `, // html body
               });
               await db.collection("users").updateOne({
